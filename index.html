@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test des liens one-click — GGE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <span class="brand-label">Galileo Global Education</span>
+      <h1>Test des liens one-click</h1>
+      <p class="subtitle">Inscrire un contact en tant que membre de campagne événement</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="card form-section">
+      <div class="field">
+        <label for="urlInput">URL à tester</label>
+        <textarea
+          id="urlInput"
+          rows="5"
+          placeholder="Collez ici l'URL contenant {{ContactId}} et {{OpportunityID}}…"
+          spellcheck="false"
+        ></textarea>
+      </div>
+
+      <div class="field">
+        <label for="ucSelect">UC</label>
+        <select id="ucSelect">
+          <option value="">— Sélectionnez une UC —</option>
+        </select>
+      </div>
+
+      <button id="generateBtn" class="btn-primary">Générer</button>
+    </section>
+
+    <section class="card result-section" id="resultSection" hidden>
+      <h2>Lien généré</h2>
+      <div class="result-link-box">
+        <a id="resultLink" href="#" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <button id="copyBtn" class="btn-secondary">Copier le lien</button>
+    </section>
+
+    <section class="card log-section">
+      <h2>Journal des erreurs</h2>
+      <div id="errorLog" class="error-log">
+        <p class="log-empty">Aucune erreur détectée.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
