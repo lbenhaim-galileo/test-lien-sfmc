@@ -223,6 +223,20 @@ select:focus {
   margin-top: 1px;
 }
 
+/* ── Intro section ── */
+.intro-section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--blue-dark);
+}
+.intro-section p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-top: 6px;
+}
+
 /* ── Section headings ── */
 .form-section h2,
 .result-section h2 {
