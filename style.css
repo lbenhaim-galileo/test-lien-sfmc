@@ -122,7 +122,11 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--blue-mid);
+<<<<<<< HEAD
   box-shadow: 0 0 0 3px rgba(6,21,99,.15);
+=======
+  box-shadow: 0 0 0 3px rgba(0,85,164,.12);
+>>>>>>> 99104e1272bf8b0549e519a44b7e712dbfcd3b9c
 }
 
 /* ── Buttons ── */
